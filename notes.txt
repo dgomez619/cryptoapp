@@ -1,0 +1,44 @@
+packages installed 
+
+antd
+@ant-design/icons 
+react-redux 
+@reduxjs/toolkit 
+axios 
+chart.js 
+html-react-parser 
+millify 
+moment 
+react-chartjs-2
+
+error made when not installing react-router-dom. 
+
+//////////
+
+error made when not specifying BrowserRouter as Router in the SRC index.js file. 
+cope of error thrown "Cannot read properties of undefined (reading 'pathname')"
+
+////////////////
+
+error thrown when using SWITCH to switch routes, switch is deprecated in reach, had to change to "Routes" importing it from "react-router-dom"
+syntax looks like this, not the element attribute inside routes to specify the element, written as an actual element tag. 
+
+            <Routes>
+              <Route exact path='/' element={<Homepage />}  /> 
+              <Route exact path='/exchanges' element={<Exchanges />} />
+              <Route exact path='/cryptocurrencies' element={<Cryptocurrencies />} />
+              <Route exact path='/crypto/:coinId' element={<CryptoDetails />} />
+              <Route exact path='/news'element={<News />} />
+            </Routes>
+
+////////////////////////////
+
+Using Redux toolkit to fetch real API data. 
+
+///////////////////////
+
+when trying to send data to the redux store after fetching it, there was en error ocurring 
+
+--"middleware for rtk-query api at reducerpath "cryptoapi" has not been added to the store. you must add the middleware for rtk-query to function correctly!"--
+
+after searching online I noticed that the tutorial that I was following did not include a middlewear and the app was function according to the video, but it was not working for me. I found how to include the middle wear on stackoverflow and it worked correctly. 
